@@ -1,0 +1,21 @@
+curl http://localhost:8080/login
+Employee Login
+
+curl -v -X POST \
+-H "Authorization: Bearer "$(gcloud auth application-default print-access-token) \
+-H "Content-Type: application/json; charset=utf-8" \
+-d "Binu Varghese"  \
+ http://localhost:8080/postbody
+
+# returns with error
+#Validation failed. Token supplieed might be access token; idToken expected.
+
+curl -v -X POST \
+-H "Authorization: Bearer "$(gcloud auth print-identity-token) \
+-H "Content-Type: application/json; charset=utf-8" \
+-d "Binu Varghese"  \
+ http://localhost:8080/postbody
+
+response
+Hello Binu Varghese%
+
