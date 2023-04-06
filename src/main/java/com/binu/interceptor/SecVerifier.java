@@ -23,7 +23,7 @@ public class SecVerifier {
     private String CLIENT_ID_SUFFIX=".apps.googleusercontent.com"; //Only used for checking; not appended to the CLIENT_ID;
     // Uncomment above lines to read it from application-xxx.properties file
     //private static final String CLIENT_ID = "enter ClientID here; You can get it from Jim/Nicole";
-    //private static final String CLIENT_ID = "403157937476-48nvdvsohjhr9fv68n8q6dbho0n5c5qm.apps.googleusercontent.com";
+    //private static final String CLIENT_ID = "4xxxx.apps.googleusercontent.com";
 
     public void setCLIENT_ID(String clientId){
         this.CLIENT_ID = clientId;
